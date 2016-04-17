@@ -4,16 +4,15 @@ def inplutt(s,a):
 	return a
 
 def isDivideable(a,b):
-	return (a/b)%1 == 0
+	return a%b == 0
 
 def smallestDivider(a):
-	r=a
 	i=2
-	while (i<(a/2)):
+	while (i<(a)):
 		if (isDivideable(a,i)):
 			return i
 		i=i+1
-	return r
+	return a
 
 
 def primeFactor(a):
